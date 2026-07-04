@@ -54,7 +54,7 @@ backToTop?.addEventListener('click', () => {
 function onScroll() {
   const scrollY = window.scrollY;
   mainNav.classList.toggle('scrolled', scrollY > 40);
-  backToTop.classList.toggle('show', scrollY > 500);
+  backToTop.classList.toggle('show', scrollY > 80);
 
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
   const progress = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
