@@ -45,6 +45,11 @@ if (window.Typed) {
 const mainNav = document.getElementById('mainNav');
 const progressBar = document.getElementById('scrollProgressBar');
 const backToTop = document.getElementById('backToTop');
+// add
+backToTop?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+// ------------
 
 function onScroll() {
   const scrollY = window.scrollY;
